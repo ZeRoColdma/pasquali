@@ -1,0 +1,30 @@
+version: "3"
+services:
+  platform:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: pasquali
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 3333:3333
+    command:
+      - node
+      - index.js

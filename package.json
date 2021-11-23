@@ -4,11 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "swagger-autogen": "node swagger.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.95.14"
+    "knex": "^0.95.14",
+    "pg": "^8.7.1",
+    "query-string": "^7.0.1",
+    "swagger-autogen": "^2.13.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

@@ -1,35 +1,20 @@
-// Update with your config settings.
-
 module.exports = {
-  developer: {
-    client: "postgresql",
+  development: {
+    client: "pg",
     connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
+      host: "172.22.0.2",
+      database: "pasquali",
+      user: "postgres",
+      password: "postgres",
+      port: 5432,
     },
     pool: {
       min: 2,
       max: 10,
     },
     migrations: {
-      tableName: "knex_migrations",
-    },
-  },
-
-  production: {
-    client: "postgresql",
-    connection: {
-      database: "my_db",
-      user: "username",
-      password: "password",
-    },
-    pool: {
-      min: 2,
-      max: 10,
-    },
-    migrations: {
-      tableName: "knex_migrations",
+      directory: "./app/database/migrations",
+      tableName: "pasquali_teste",
     },
   },
 };

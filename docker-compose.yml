@@ -8,16 +8,22 @@ services:
       - 3000:3000
     depends_on:
       - db
+    networks:
+      - pasquali-network
 
   db:
     image: postgres
     restart: always
+    volumes:
+      - postgres-data:/data
     environment:
       POSTGRES_DB: pasquali
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
       - 5432:5432
+    networks:
+      - pasquali-network
 
   web:
     build: .
@@ -28,3 +34,14 @@ services:
     command:
       - node
       - index.js
+
+      - knex migrate:latest
+    networks:
+      - pasquali-network
+
+volumes:
+  postgres-data: {}
+
+networks:
+  pasquali-network:
+    external: true

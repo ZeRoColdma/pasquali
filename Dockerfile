@@ -12,4 +12,4 @@ COPY . .
 EXPOSE 3333
 EXPOSE 5432
 
-CMD [  "node", "index.js", "knex", "migrate:up"  ]
+CMD [  "node", "index.js", "knex", "migrate:latest"  ]

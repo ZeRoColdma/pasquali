@@ -10,34 +10,42 @@
 
 ## Rotas para acesso de endpoints
 
-/users GET UsersController.index
+GET
+/users
 
 - Listagem de todos os Usuarios
 
-/users POST UsersController.store
+POST
+/users
 
 - Salvar um novo usuario
 
-/cards GET CardsController.index
+GET
+/cards
 
 - Listagem de todas as cartas
 
-/cards POST CardsController.store
+POST
+/cards
 
 - Salvar uma nova carta
 
-/userhistory GET UserHistoryController.index
+GET
+/userhistory
 
 - Listagem de todas as historias
 
-/userhistory POST UserHistoryController.store
+POST
+/userhistory
 
 - Salvar uma nova historia de usuario
 
-/votes GET VotesController.index
+GET
+/votes
 
 - Listagem de todos os votos
 
-/votes POST VotesController.store
+POST
+/votes
 
 - Salvar um novo voto

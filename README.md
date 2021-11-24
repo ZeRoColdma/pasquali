@@ -10,10 +10,6 @@
 
 ## Rotas para acesso de endpoints
 
-- Rotas com o Middleware **auth** só serão acessiveis utilizando o Token
-
-/ **Rota de controle**
-
 /users GET UsersController.index
 
 - Listagem de todos os Usuarios

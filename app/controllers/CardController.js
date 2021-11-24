@@ -23,6 +23,6 @@ module.exports = {
         console.log(error);
       }
     }
-    return response.json({ card_value });
+    return response.status(200).json({ card_value });
   },
 };

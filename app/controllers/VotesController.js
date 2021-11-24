@@ -1,7 +1,6 @@
 const queryString = require("query-string");
 const connection = require("../database/connection");
 
-
 module.exports = {
   async index(request, response) {
     const data = await connection("votes").select("*");
@@ -16,6 +15,6 @@ module.exports = {
     } catch (error) {
       console.log(error);
     }
-    return response.json({ vote, user_id, card_id, history_id });
+    return response.status(200).json({ vote, user_id, card_id, history_id });
   },
 };

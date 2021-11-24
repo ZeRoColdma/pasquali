@@ -25,6 +25,6 @@ module.exports = {
         console.log(error);
       }
     }
-    return response.json({ name });
+    return response.status(200).json({ name });
   },
 };

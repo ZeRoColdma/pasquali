@@ -16,6 +16,6 @@ module.exports = {
       console.log(error);
     }
 
-    return response.json({ history });
+    return response.status(200).json({ history });
   },
 };

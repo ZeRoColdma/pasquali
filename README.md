@@ -15,37 +15,37 @@ GET
 
 - Listagem de todos os Usuarios
 
-POST
-/users
+- POST
+  /users
 
 - Salvar um novo usuario
 
-GET
-/cards
+- GET
+  /cards
 
 - Listagem de todas as cartas
 
-POST
-/cards
+- POST
+  /cards
 
 - Salvar uma nova carta
 
-GET
-/userhistory
+- GET
+  /userhistory
 
 - Listagem de todas as historias
 
-POST
-/userhistory
+- POST
+  /userhistory
 
 - Salvar uma nova historia de usuario
 
-GET
-/votes
+- GET
+  /votes
 
 - Listagem de todos os votos
 
-POST
-/votes
+- POST
+  /votes
 
 - Salvar um novo voto

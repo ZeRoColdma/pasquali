@@ -57,3 +57,13 @@
 /votes
 
 \*_Salvar um novo voto_
+
+---
+
+**End Pont Documentação**
+
+http://localhost:3333/doc
+
+---
+
+Caso deseje utiliza o outro modelo de decumentação elaborado com Insomnia, basta rodar em um live server o arquivo index.html que se encontra dentro da pasta documentação.

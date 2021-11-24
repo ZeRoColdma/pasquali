@@ -89,23 +89,57 @@
       "get": {
         "tags": [],
         "description": "Retorna todos os Votos com os ID's referenter ao voto",
-        "parameters": [
-          null
-        ],
+        "parameters": [],
         "responses": {}
       },
       "post": {
         "tags": [],
-        "description": "",
+        "description": "Tambem deve ser passado por body e headers",
         "parameters": [
           {
-            "name": "obj",
+            "name": "vote",
             "in": "body",
             "schema": {
-              "type": "object",
+              "type": "Integer",
               "properties": {
                 "vote": {
-                  "example": "any"
+                  "example": 3
+                }
+              }
+            }
+          },
+          {
+            "name": "user_id",
+            "in": "Headers",
+            "schema": {
+              "type": "Integer",
+              "properties": {
+                "user_id": {
+                  "example": 3
+                }
+              }
+            }
+          },
+          {
+            "name": "card_id",
+            "in": "Headers",
+            "schema": {
+              "type": "Integer",
+              "properties": {
+                "card_id": {
+                  "example": 3
+                }
+              }
+            }
+          },
+          {
+            "name": "history_id",
+            "in": "Headers",
+            "schema": {
+              "type": "Integer",
+              "properties": {
+                "history_id": {
+                  "example": 3
                 }
               }
             }

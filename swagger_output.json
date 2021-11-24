@@ -1,0 +1,119 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3333",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/users": {
+      "post": {
+        "tags": [],
+        "description": "Salvar um novo usuario. Usuarios com nomes identicos não são salvos",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "String"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/cards": {
+      "post": {
+        "tags": [],
+        "description": "Salvar um nova carta. Cartas com os mesmos valores não são permitidas",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "card_value": {
+                  "example": "Int"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/userhistory": {
+      "post": {
+        "tags": [],
+        "description": "Salva um nova historia. Historias iguais não serão salvas",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "history": {
+                  "example": "Text"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/votes": {
+      "get": {
+        "tags": [],
+        "description": "Retorna todos os Votos com os ID's referenter ao voto",
+        "parameters": [
+          null
+        ],
+        "responses": {}
+      },
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vote": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}

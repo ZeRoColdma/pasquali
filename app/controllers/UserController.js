@@ -1,6 +1,10 @@
 const queryString = require("query-string");
 const connection = require("../database/connection");
 
+/*
+ #swagger.description = 'Route for user Registe.'
+*/
+
 module.exports = {
   async index(request, response) {
     const data = await connection("users").select("*");

@@ -10,34 +10,50 @@
 
 ## Rotas para acesso de endpoints
 
-GET  
+**Metodo GET**
+
 /users
-- Listagem de todos os Usuarios
 
-- POST
+\*_Listagem de todos os Usuarios_
+
+**Metodo POST**
+
 /users
-- Salvar um novo usuario
 
-- GET  
+\*_Salvar um novo usuario_
+
+**Metodo GET**
+
 /cards
-- Listagem de todas as cartas
 
-- POST  
+\*_Listagem de todas as cartas_
+
+**Metodo POST**
+
 /cards
-- Salvar uma nova carta
 
-- GET  
+\*_Salvar uma nova carta_
+
+**Metodo GET**
+
 /userhistory
-- Listagem de todas as historias
 
-- POST  
+\*_Listagem de todas as historias_
+
+**Metodo POST**
+
 /userhistory
-- Salvar uma nova historia de usuario
 
-- GET  
-/votes
-- Listagem de todos os votos
+\*_Salvar uma nova historia de usuario_
 
-- POST  
+**Metodo GET**
+
 /votes
-- Salvar um novo voto
+
+\*_Listagem de todos os votos_
+
+**Metodo POST**
+
+/votes
+
+\*_Salvar um novo voto_
